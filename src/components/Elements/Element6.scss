@@ -1,0 +1,83 @@
+.element6-container {
+  padding: 0;
+}
+
+.element6-heading,
+.element6-paragraph,
+.demo-link2 {
+  padding-left: 30px; /* Common left padding for alignment */
+}
+
+.element6-heading {
+  text-align: left;
+  margin-top: 150px;
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.element6-paragraph {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Gilroy-Regular', sans-serif;
+  max-width: 95%;
+}
+
+.img-fluid10 {
+  max-width: 80%; /* Ensure image resizes to fit container */
+  height: 90%; /* Maintain aspect ratio */
+}
+
+.demo-link2 {
+  text-decoration: none;
+  color: #473BF0;
+  font-family: 'Gilroy-Bold', sans-serif;
+  display: inline-flex;
+  align-items: center;
+}
+
+.demo-icon2 {
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+  margin-left: 5px; /* Add space between text and icon */
+}
+
+@media (max-width: 768px) {
+  .element6-container {
+    padding: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .element6-heading,
+  .element6-paragraph,
+  .demo-link2 {
+    padding-left: 30px; /* Maintain left padding */
+    text-align: left; /* Align text to the left */
+  }
+
+  .element6-heading {
+    font-size: 1.5rem; /* 24px */
+    margin-top: 30px; /* Adjust top margin */
+  }
+
+  .element6-paragraph {
+    font-size: 0.875rem; /* 14px */
+    max-width: 100%; /* Adjust width to full for single column */
+    margin-top: 10px; /* Adjust top margin */
+  }
+
+  .demo-link2 {
+    margin-top: 15px; /* Adjust top margin */
+    margin-bottom: 30px; /* Adjust bottom margin */
+  }
+
+  .img-fluid10 {
+    max-width: 100%; /* Ensure image resizes to fit container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

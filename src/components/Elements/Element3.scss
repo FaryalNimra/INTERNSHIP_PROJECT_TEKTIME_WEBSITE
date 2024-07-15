@@ -1,0 +1,100 @@
+.element3-container {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative; /* Ensure the parent container is positioned */
+}
+
+.element3-col {
+  padding: 15px;
+  position: relative; /* Ensure the columns are positioned */
+}
+
+.element3-col:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: aliceblue; /* Vertical line color */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.element3-heading {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: 'Gilroy-Bold', sans-serif;
+  text-align: center; /* Align heading center */
+}
+
+.element3-paragraph {
+  font-size: 18px;
+  color: #161C2D;
+  font-family: 'Gilroy-regular', sans-serif;
+  max-width: 100%;
+  margin: 0 auto; /* Center-align paragraph */
+}
+
+@media (max-width: 768px) {
+  .element3-container {
+    padding-left: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .element3-col {
+    padding: 10px;
+    width: 100%; /* Make each column take the full width */
+  }
+
+  .element3-heading {
+    font-size: 24px;
+    text-align: left; /* Align heading to the left */
+  }
+
+  .element3-paragraph {
+    font-size: 12px;
+    text-align: left; /* Align paragraph to the left */
+    margin: 0; /* Remove auto margins */
+    max-width: 100%; /* Ensure paragraph takes full width */
+  }
+
+  .element3-col:not(:last-child)::after {
+    display: none; /* Hide the vertical line on smaller screens */
+  }
+}
+
+/* Media query for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .element3-container {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .element3-col {
+    padding: 5px;
+    width: 100%; /* Make each column take the full width */
+  }
+
+  .element3-heading {
+    font-size: 20px;
+    text-align: left; /* Align heading to the left */
+  }
+
+  .element3-paragraph {
+    font-size: 10px;
+    text-align: left; /* Align paragraph to the left */
+    margin: 0; /* Remove auto margins */
+    max-width: 100%; /* Ensure paragraph takes full width */
+  }
+
+  .element3-col:not(:last-child)::after {
+    display: none; /* Hide the vertical line on smaller screens */
+  }
+}
